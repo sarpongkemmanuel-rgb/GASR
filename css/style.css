@@ -1,0 +1,1706 @@
+/* =========================
+   BLUE RED WHITE CONFERENCE THEME
+========================= */
+
+
+/* =========================
+   GLOBAL SETTINGS
+========================= */
+
+:root{
+
+    --primary-blue:#0b5ed7;
+    --dark-blue:#002855;
+    --navy:#001f3f;
+
+    --accent-red:#dc3545;
+    --light-red:#ff6b6b;
+
+    --white:#ffffff;
+    --light-bg:#f5f9ff;
+
+    --text-dark:#333333;
+
+}
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    color:var(--text-dark);
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+}
+
+
+
+a{
+
+    text-decoration:none;
+
+}
+
+
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+
+
+
+/* =========================
+   FIXED HEADER BOX
+========================= */
+
+
+header{
+
+    position:fixed;
+
+    top:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:90%;
+
+    max-width:1200px;
+
+    z-index:9999;
+
+}
+
+
+
+
+.navbar{
+
+
+    background:rgba(0,40,85,.88);
+
+    backdrop-filter:blur(15px);
+
+
+    border-radius:20px;
+
+
+    padding:15px 30px;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.35);
+
+
+
+    border:1px solid rgba(255,255,255,.2);
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+ LOGO
+========================= */
+
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:white;
+
+}
+
+
+
+.logo img{
+
+    width:65px;
+
+    height:65px;
+
+    object-fit:contain;
+
+}
+
+
+
+.logo h3{
+
+    font-size:26px;
+
+    line-height:1;
+
+}
+
+
+
+.logo h3 span{
+
+    color:var(--accent-red);
+
+}
+
+
+
+.logo p{
+
+    font-size:12px;
+
+    color:#dbeafe;
+
+}
+
+
+
+
+
+
+
+/* =========================
+ NAVIGATION
+========================= */
+
+
+.nav-links{
+
+    display:flex;
+
+    gap:30px;
+
+    list-style:none;
+
+}
+
+
+
+.nav-links a{
+
+    color:white;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+
+
+.nav-links a:hover{
+
+    color:var(--accent-red);
+
+}
+
+
+
+
+
+.menu{
+
+    display:none;
+
+    color:white;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+
+/* =========================
+ BUTTONS
+========================= */
+
+
+.btn{
+
+    background:var(--accent-red);
+
+    color:white;
+
+    padding:14px 30px;
+
+    border-radius:40px;
+
+    font-weight:700;
+
+    display:inline-block;
+
+    transition:.3s;
+
+}
+
+
+
+.btn:hover{
+
+    background:var(--primary-blue);
+
+    transform:translateY(-3px);
+
+}
+
+
+
+
+
+.outline-btn{
+
+    border:2px solid white;
+
+    padding:12px 30px;
+
+    border-radius:40px;
+
+    color:white;
+
+    margin-left:15px;
+
+}
+
+
+
+.outline-btn:hover{
+
+    background:white;
+
+    color:var(--dark-blue);
+
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+
+.hero{
+
+    min-height:100vh;
+
+
+    background:
+
+    url("../assets/images/conference-bg.jpg")
+
+    center/cover no-repeat;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    text-align:center;
+
+    color:white;
+
+
+    position:relative;
+
+}
+
+
+
+
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+
+    background:
+
+    rgba(0,40,85,.72);
+
+}
+
+
+
+
+
+.hero-content{
+
+    position:relative;
+
+    width:90%;
+
+    max-width:950px;
+
+    padding-top:120px;
+
+}
+
+
+
+
+
+.hero h1{
+
+    font-size:55px;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+.hero h1 span{
+
+    color:var(--accent-red);
+
+}
+
+
+
+
+
+.hero p{
+
+    font-size:20px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+
+
+.conference-info{
+
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin:35px 0;
+
+}
+
+
+
+
+
+.conference-info div{
+
+
+    background:
+
+    rgba(255,255,255,.18);
+
+
+    padding:15px 25px;
+
+
+    border-radius:40px;
+
+
+    backdrop-filter:blur(10px);
+
+
+    border:1px solid rgba(255,255,255,.25);
+
+
+}
+
+
+
+
+
+
+
+.hero-buttons{
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+ COUNTDOWN
+========================= */
+
+
+.countdown{
+
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.countdown div{
+
+
+    background:white;
+
+
+    color:#222;
+
+
+    width:110px;
+
+
+    padding:15px;
+
+
+    border-radius:15px;
+
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.15);
+
+}
+
+
+
+.countdown h2{
+
+
+    color:var(--accent-red);
+
+
+    font-size:38px;
+
+}
+
+
+
+.countdown span{
+
+    font-weight:600;
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+ GENERAL SECTIONS
+========================= */
+
+
+.section{
+
+    padding:90px 0;
+
+}
+
+
+
+.grey{
+
+    background:var(--light-bg);
+
+}
+
+
+
+
+.title{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+
+
+
+
+.title h2{
+
+
+    font-size:40px;
+
+    color:var(--dark-blue);
+
+}
+
+
+
+
+
+.title h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:70px;
+
+    height:4px;
+
+    background:var(--accent-red);
+
+    margin:15px auto;
+
+}
+
+
+
+
+
+.title p{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+ ABOUT
+========================= */
+
+
+.about-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:1fr 1fr;
+
+
+    gap:50px;
+
+
+}
+
+
+
+
+.about-grid h3{
+
+
+    font-size:30px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+.about-grid ul{
+
+
+    list-style:none;
+
+
+    margin-top:25px;
+
+
+}
+
+
+
+
+.about-grid li{
+
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+.about-grid li::before{
+
+
+    content:"✓";
+
+    color:var(--accent-red);
+
+    font-weight:bold;
+
+    margin-right:10px;
+
+
+}
+
+
+
+
+
+
+
+.info-box{
+
+
+    background:var(--dark-blue);
+
+
+    color:white;
+
+
+    padding:40px;
+
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.2);
+
+
+}
+
+
+
+
+
+.info-box h3{
+
+
+    color:#ffffff;
+
+
+}
+
+
+
+
+
+.info-box span{
+
+    color:var(--accent-red);
+
+}
+
+
+/* =========================
+   SPEAKERS
+========================= */
+
+
+.speaker-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(3,1fr);
+
+
+    gap:30px;
+
+
+}
+
+
+
+
+
+.speaker-card{
+
+
+    background:white;
+
+
+    border-radius:20px;
+
+
+    overflow:hidden;
+
+
+    text-align:center;
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.1);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.speaker-card:hover{
+
+
+    transform:translateY(-10px);
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,40,85,.2);
+
+
+}
+
+
+
+
+.speaker-card img{
+
+
+    height:300px;
+
+
+    object-fit:cover;
+
+
+}
+
+
+
+
+.speaker-card h3{
+
+
+    margin-top:20px;
+
+
+    color:var(--dark-blue);
+
+
+}
+
+
+
+
+.speaker-card p{
+
+
+    padding-bottom:25px;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+ SCHEDULE
+========================= */
+
+
+.schedule-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(3,1fr);
+
+
+    gap:30px;
+
+
+}
+
+
+
+
+
+.schedule-card{
+
+
+    background:var(--dark-blue);
+
+
+    color:white;
+
+
+    padding:35px;
+
+
+    border-radius:20px;
+
+
+    border-top:5px solid var(--accent-red);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.schedule-card:hover{
+
+
+    transform:translateY(-8px);
+
+
+}
+
+
+
+
+
+.schedule-card h3{
+
+
+    color:white;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+.schedule-card span{
+
+
+    color:#ffdddd;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+ REGISTER
+========================= */
+
+
+.register{
+
+
+    background:
+
+
+    linear-gradient(
+
+    rgba(0,40,85,.85),
+
+    rgba(0,40,85,.85)
+
+    ),
+
+
+    url("../assets/images/register-bg.jpg");
+
+
+
+    background-size:cover;
+
+
+    background-position:center;
+
+
+    color:white;
+
+
+    padding:90px 0;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.register h2{
+
+
+    font-size:40px;
+
+
+}
+
+
+
+
+.register h2 span{
+
+
+    color:var(--accent-red);
+
+
+}
+
+
+
+
+
+.register form{
+
+
+    max-width:600px;
+
+
+    margin:40px auto;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:20px;
+
+
+}
+
+
+
+
+
+.register input{
+
+
+    padding:17px;
+
+
+    border:none;
+
+
+    border-radius:8px;
+
+
+    font-size:16px;
+
+
+}
+
+
+
+
+
+.register input:focus{
+
+
+    outline:3px solid rgba(220,53,69,.4);
+
+
+}
+
+
+
+
+
+
+.register button{
+
+
+    border:none;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+ CONTACT
+========================= */
+
+
+.contact{
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.contact h2{
+
+
+    font-size:35px;
+
+
+    margin-bottom:20px;
+
+
+    color:var(--dark-blue);
+
+
+}
+
+
+
+
+
+.contact p{
+
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+
+
+.contact a{
+
+
+    color:var(--primary-blue);
+
+
+}
+
+
+
+
+
+.contact a:hover{
+
+
+    color:var(--accent-red);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+ FOOTER
+========================= */
+
+
+footer{
+
+
+    background:var(--navy);
+
+
+    color:white;
+
+
+    text-align:center;
+
+
+    padding:25px;
+
+
+}
+
+
+
+
+
+footer span{
+
+
+    color:var(--accent-red);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+ MOBILE MENU
+========================= */
+
+
+.nav-links.show{
+
+
+    display:flex;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+ TABLET
+========================= */
+
+
+@media(max-width:950px){
+
+
+
+header{
+
+
+    top:10px;
+
+    width:95%;
+
+
+}
+
+
+
+
+
+.navbar{
+
+
+    padding:12px 20px;
+
+
+}
+
+
+
+
+
+.nav-links{
+
+
+    display:none;
+
+
+}
+
+
+
+
+
+.menu{
+
+
+    display:block;
+
+
+}
+
+
+
+
+
+.nav-links.show{
+
+
+    display:flex;
+
+
+    position:absolute;
+
+
+    top:90px;
+
+
+    left:0;
+
+
+    width:100%;
+
+
+    background:var(--dark-blue);
+
+
+    flex-direction:column;
+
+
+    align-items:center;
+
+
+    padding:35px 0;
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+
+
+.hero h1{
+
+
+    font-size:40px;
+
+
+}
+
+
+
+
+
+.about-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+
+.speaker-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+
+.schedule-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+
+@media(max-width:600px){
+
+
+
+.logo img{
+
+
+    width:50px;
+
+
+    height:50px;
+
+
+}
+
+
+
+
+
+.logo h3{
+
+
+    font-size:18px;
+
+
+}
+
+
+
+
+
+.logo p{
+
+
+    display:none;
+
+
+}
+
+
+
+
+
+.hero h1{
+
+
+    font-size:30px;
+
+
+}
+
+
+
+
+
+.hero p{
+
+
+    font-size:16px;
+
+
+}
+
+
+
+
+
+.hero-buttons{
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:15px;
+
+
+}
+
+
+
+
+
+.outline-btn{
+
+
+    margin-left:0;
+
+
+}
+
+
+
+
+
+.conference-info div{
+
+
+    width:90%;
+
+
+}
+
+
+
+
+
+.countdown{
+
+
+    gap:10px;
+
+
+}
+
+
+
+
+
+.countdown div{
+
+
+    width:75px;
+
+
+}
+
+
+
+
+
+.countdown h2{
+
+
+    font-size:28px;
+
+
+}
+
+
+
+
+
+.btn,
+.outline-btn{
+
+
+    padding:12px 20px;
+
+
+}
+
+
+
+
+
+.title h2{
+
+
+    font-size:30px;
+
+
+}
+
+
+
+
+
+.info-box{
+
+
+    padding:25px;
+
+
+}
+
+
+
+
+
+.register h2{
+
+
+    font-size:30px;
+
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+/* =========================
+   EXTRA PREMIUM EFFECTS
+========================= */
+
+
+/* Scroll shadow ready header */
+
+header.scrolled .navbar{
+
+    background:rgba(0,31,63,.98);
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.45);
+
+}
+
+
+
+
+/* Red highlight borders */
+
+.card,
+.speaker-card,
+.schedule-card{
+
+
+    border-bottom:3px solid transparent;
+
+    transition:.3s;
+
+}
+
+
+
+
+
+.card:hover,
+.speaker-card:hover,
+.schedule-card:hover{
+
+
+    border-bottom-color:var(--accent-red);
+
+}
+
+
+
+
+
+
+/* Smooth buttons */
+
+button,
+.btn{
+
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+button:hover{
+
+
+    background:var(--primary-blue);
+
+}
+
+
+
+
+
+
+/* Selection color */
+
+::selection{
+
+
+    background:var(--accent-red);
+
+    color:white;
+
+
+}
